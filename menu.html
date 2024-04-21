@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe's Grill</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Menu",
+            "name": "Joe's Grill Menu",
+            "description": "Explore our variety of American and Barbecue dishes.",
+            "inLanguage": "en-US",
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": "Appetizers",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Grilled Shrimp",
+                    "description": "Skewered shrimp seasoned and grilled to perfection.",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "12",
+                      "priceCurrency": "USD"
+                    },
+                    "suitableForDiet": "https://schema.org/GlutenFreeDiet"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Stuffed Mushrooms",
+                    "description": "Mushrooms filled with herbs and cheese, baked until golden brown.",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "10",
+                      "priceCurrency": "USD"
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Main Courses",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "BBQ Ribs",
+                    "description": "Slow-cooked ribs smothered in our signature BBQ sauce.",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "18",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Classic Burger",
+                    "description": "Beef patty with lettuce, tomato, and our special sauce.",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "15",
+                      "priceCurrency": "USD"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+    </script>
+</head>
+<body>
+    <h1>Joe's Grill Menu</h1>
+    <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+            <h3>Grilled Shrimp <span class="menu-item-price">$12</span></h3>
+            <p>Skewered shrimp seasoned and grilled to perfection.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Stuffed Mushrooms <span class="menu-item-price">$10</span></h3>
+            <p>Mushrooms filled with herbs and cheese, baked until golden brown.</p>
+        </div>
+    </div>
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+            <h3>BBQ Ribs <span class="menu-item-price">$18</span></h3>
+            <p>Slow-cooked ribs smothered in our signature BBQ sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Classic Burger <span class="menu-item-price">$15</span></h3>
+            <p>Beef patty with lettuce, tomato, and our special sauce.</p>
+        </div>
+    </div>
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <h3>Apple Pie <span class="menu-item-price">$8</span></h3>
+            <p>Traditional apple pie with a flaky crust, served with vanilla ice cream.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Chocolate Brownie <span class="menu-item-price">$7</span></h3>
+            <p>Rich chocolate brownie with a molten chocolate center.</p>
+        </div>
+    </div>
+    <p>Visit us or call +1 123-456-7890 to place an order!</p>
+</body>
+</html>
