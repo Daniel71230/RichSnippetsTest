@@ -4,71 +4,111 @@
     <title>Joe's Grill</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Menu",
-            "name": "Joe's Grill Menu",
-            "description": "Explore our variety of American and Barbecue dishes.",
-            "inLanguage": "en-US",
-            "hasMenuSection": [
-              {
-                "@type": "MenuSection",
-                "name": "Appetizers",
-                "hasMenuItem": [
-                  {
-                    "@type": "MenuItem",
-                    "name": "Grilled Shrimp",
-                    "description": "Skewered shrimp seasoned and grilled to perfection.",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "12",
-                      "priceCurrency": "USD"
-                    },
-                    "suitableForDiet": "https://schema.org/GlutenFreeDiet"
-                  },
-                  {
-                    "@type": "MenuItem",
-                    "name": "Stuffed Mushrooms",
-                    "description": "Mushrooms filled with herbs and cheese, baked until golden brown.",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "10",
-                      "priceCurrency": "USD"
-                    }
+      {
+        "@context": "http://schema.org",
+        "@type": "Restaurant",
+        "name": "Joe's Grill",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Elm St",
+          "addressLocality": "Sometown",
+          "addressRegion": "CA",
+          "postalCode": "90210",
+          "addressCountry": "USA"
+        },
+        "telephone": "+11234567890",
+        "url": "http://www.joesgrill.example.com",
+        "menu": "http://www.joesgrill.example.com/menu.html",
+        "servesCuisine": "American",
+        "hasMenu": {
+          "@type": "Menu",
+          "name": "Joe's Grill Menu",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Appetizers",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Grilled Shrimp",
+                  "description": "Skewered shrimp seasoned and grilled to perfection.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "12",
+                    "priceCurrency": "USD"
                   }
-                ]
-              },
-              {
-                "@type": "MenuSection",
-                "name": "Main Courses",
-                "hasMenuItem": [
-                  {
-                    "@type": "MenuItem",
-                    "name": "BBQ Ribs",
-                    "description": "Slow-cooked ribs smothered in our signature BBQ sauce.",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "18",
-                      "priceCurrency": "USD"
-                    }
-                  },
-                  {
-                    "@type": "MenuItem",
-                    "name": "Classic Burger",
-                    "description": "Beef patty with lettuce, tomato, and our special sauce.",
-                    "offers": {
-                      "@type": "Offer",
-                      "price": "15",
-                      "priceCurrency": "USD"
-                    }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Stuffed Mushrooms",
+                  "description": "Mushrooms filled with herbs and cheese, baked until golden brown.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "10",
+                    "priceCurrency": "USD"
                   }
-                ]
-              }
-            ]
-          }
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Main Courses",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "BBQ Ribs",
+                  "description": "Slow-cooked ribs smothered in our signature BBQ sauce.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "18",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Classic Burger",
+                  "description": "Beef patty with lettuce, tomato, and our special sauce.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "15",
+                    "priceCurrency": "USD"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Desserts",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Apple Pie",
+                  "description": "Traditional apple pie with a flaky crust, served with vanilla ice cream.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "8",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Chocolate Brownie",
+                  "description": "Rich chocolate brownie with a molten chocolate center.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "7",
+                    "priceCurrency": "USD"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
     </script>
 </head>
 <body>
+  <main>
     <h1>Joe's Grill Menu</h1>
     <div class="menu-section">
         <h2>Appetizers</h2>
@@ -104,5 +144,18 @@
         </div>
     </div>
     <p>Visit us or call +1 123-456-7890 to place an order!</p>
+  </main>
+  <footer>
+    <div class="visit-us">
+        <p>Visit us at:</p>
+        <p>123 Elm St, Sometown, CA, 90210, USA</p>
+    </div>
+   <div class="contact">
+    <p>Make a reservation by calling us at: <a href="tel:+11234567890">+1 123-456-7890</a></p>
+    <p>Email us: <a href="mailto:contact@joesgrill.example.com">contact@joesgrill.example.com</a></p>
+    <p>Check our <a href="menu.html">Menu</a></p>
+   </div>
+
+</footer>    
 </body>
 </html>
