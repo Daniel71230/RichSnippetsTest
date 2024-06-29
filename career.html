@@ -3,7 +3,85 @@
 <head>
     <title>Joe's Grill</title>
     <link rel="stylesheet" href="stylesheet.css">
-</head>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Joe's Grill",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Elm St",
+            "addressLocality": "Sometown",
+            "addressRegion": "CA",
+            "postalCode": "90210",
+            "addressCountry": "US"
+          },
+          "telephone": "+1 123-456-7890",
+          "email": "contact@joesgrill.example.com",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Elm St",
+              "addressLocality": "Sometown",
+              "addressRegion": "CA",
+              "postalCode": "90210",
+              "addressCountry": "US"
+            }
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Job Openings",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Cook",
+                "description": "Looking for a cook with experience!",
+                "url": "mailto:contact@joesgrill.example.com",
+                "employmentType": "FULL_TIME",
+                "hiringOrganization": {
+                  "@type": "Organization",
+                  "name": "Joe's Grill",
+                },
+                "jobLocation": {
+                  "@type": "Place",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Elm St",
+                    "addressLocality": "Sometown",
+                    "addressRegion": "CA",
+                    "postalCode": "90210",
+                    "addressCountry": "US"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Waiter/Waitress",
+                "description": "No experience needed",
+                "url": "mailto:contact@joesgrill.example.com",
+                "employmentType": "PART_TIME",
+                "hiringOrganization": {
+                  "@type": "Organization",
+                  "name": "Joe's Grill",
+                },
+                "jobLocation": {
+                  "@type": "Place",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Elm St",
+                    "addressLocality": "Sometown",
+                    "addressRegion": "CA",
+                    "postalCode": "90210",
+                    "addressCountry": "US"
+                  }
+                }
+              }
+            ]
+          }
+        }
+        </script>
+    </head>
 <body>
   <main>
     <h1>Joe's Grill Career</h1>

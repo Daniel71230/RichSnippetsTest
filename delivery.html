@@ -3,7 +3,63 @@
 <head>
     <title>Joe's Grill</title>
     <link rel="stylesheet" href="stylesheet.css">
-</head>
+    <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "Restaurant",
+       "name": "Joe's Grill",
+       "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "123 Elm St",
+         "addressLocality": "Sometown",
+         "addressRegion": "CA",
+         "postalCode": "90210",
+         "addressCountry": "US"
+       },
+       "telephone": "+1 123-456-7890",
+       "email": "contact@joesgrill.example.com",
+       "menu": "https://www.example.com/menu.html",
+       "hasOfferCatalog": {
+         "@type": "OfferCatalog",
+         "name": "Delivery and Takeaway Options",
+         "itemListElement": [
+           {
+             "@type": "Offer",
+             "name": "Delivery below 40$",
+             "price": "5",
+             "priceCurrency": "USD",
+             "eligibleTransactionVolume": {
+               "@type": "PriceSpecification",
+               "priceCurrency": "USD",
+               "maxPrice": 40
+             },
+             "url": "https://www.example.com/menu.html"
+           },
+           {
+             "@type": "Offer",
+             "name": "Delivery above 40$",
+             "price": "0",
+             "priceCurrency": "USD",
+             "eligibleTransactionVolume": {
+               "@type": "PriceSpecification",
+               "priceCurrency": "USD",
+               "minPrice": 40.01
+             },
+             "url": "https://www.example.com/menu.html"
+           },
+           {
+             "@type": "Offer",
+             "name": "Take away",
+             "price": "0",
+             "priceCurrency": "USD",
+             "description": "Pick it up yourself for free, we will call you when your order is done",
+             "url": "https://www.example.com/menu.html"
+           }
+         ]
+       }
+     }
+     </script>
+ </head>
 <body>
   <main>
     <h1>Joe's Grill Delivery</h1>
